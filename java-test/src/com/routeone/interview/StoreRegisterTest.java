@@ -175,7 +175,7 @@ public class StoreRegisterTest {
         }};
 
         Assert.assertArrayEquals(myExpectedArray.toArray() ,myReceipt.getOrderedItems().toArray());
-        Assert.assertEquals("$721.99", myReceipt.getFormattedTotal());
+        Assert.assertEquals("$4,038.98", myReceipt.getFormattedTotal());
 
     }
 

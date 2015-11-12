@@ -7,6 +7,7 @@ import java.util.regex.*;
  * Created by bullprog3 on 11/3/15.
  */
 public class CSVFile extends HashMap<String,Map<String,String>> {
+
     private Map<String, Map<String,String>> contents = null;
     final private File file;
     final private List<String> columns;
@@ -41,12 +42,12 @@ public class CSVFile extends HashMap<String,Map<String,String>> {
             else if (!quoteMode && ",".equals(sep))
             {
                 final int toPos = mySplitPatternMatcher.start();
-                list.add(stringToSplit.substring(pos, toPos));
+                list.add(stringToSplit.substring(pos, toPos).replace("\",\"",","));
                 pos = mySplitPatternMatcher.end();
             }
         }
         if (pos < stringToSplit.length()) {
-            list.add(stringToSplit.substring(pos));
+            list.add(stringToSplit.substring(pos).replace("\",\"",","));
         }
         return list;
     }

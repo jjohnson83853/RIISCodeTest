@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="21fb6bb6-97ba-44a7-8fc5-61992dc86a26" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeTest.iml" afterPath="$PROJECT_DIR$/CodeTest.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java-test/src/com/routeone/interview/StoreRegisterTest.java" afterPath="$PROJECT_DIR$/java-test/src/com/routeone/interview/StoreRegisterTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/routeone/interview/StoreRegister.java" afterPath="$PROJECT_DIR$/src/com/routeone/interview/StoreRegister.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/routeone/interview/CSVFile.java" afterPath="$PROJECT_DIR$/src/com/routeone/interview/CSVFile.java" />
     </list>
     <ignored path="CodeTest.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,7 +40,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/routeone/interview/StoreRegister.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="69" column="19" selection-start-line="69" selection-start-column="19" selection-end-line="69" selection-end-column="19" />
+              <caret line="41" column="63" selection-start-line="41" selection-start-column="60" selection-end-line="41" selection-end-column="63" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -53,9 +52,10 @@
         <entry file="file://$PROJECT_DIR$/src/com/routeone/interview/CSVFile.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+              <caret line="45" column="50" selection-start-line="45" selection-start-column="50" selection-end-line="45" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#2302#2318#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -64,8 +64,8 @@
       <file leaf-file-name="StoreRegisterTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/java-test/src/com/routeone/interview/StoreRegisterTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.05234657">
-              <caret line="196" column="76" selection-start-line="196" selection-start-column="46" selection-end-line="196" selection-end-column="76" />
+            <state vertical-scroll-proportion="0.7382671">
+              <caret line="177" column="38" selection-start-line="177" selection-start-column="38" selection-end-line="177" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -123,6 +123,7 @@
         <option value="$PROJECT_DIR$/java-test/src/com/routeone/interview/StoreRegister.java" />
         <option value="$PROJECT_DIR$/src/com/company/com/routeone/interview/StoreRegister.java" />
         <option value="$PROJECT_DIR$/src/com/routeone/interview/StoreRegister.java" />
+        <option value="$PROJECT_DIR$/src/com/routeone/interview/CSVFile.java" />
         <option value="$PROJECT_DIR$/java-test/src/com/routeone/interview/StoreRegisterTest.java" />
       </list>
     </option>
@@ -146,7 +147,7 @@
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
-      <showMembers />
+      <showMembers ProjectPane="true" />
       <showModules />
       <showLibraryContents />
       <hideEmptyPackages Scope="false" />
@@ -241,6 +242,10 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="interview" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StoreRegisterTest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ClassTreeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -875,9 +880,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="StoreRegisterTest - 2015.11.11 at 20h 46m 05s.xml">
-      <configuration name="StoreRegisterTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="StoreRegisterTest - 2015.11.11 at 20h 51m 48s.xml">
       <configuration name="StoreRegisterTest" configurationId="JUnit" />
     </history-entry>
@@ -887,17 +889,14 @@
     <history-entry file="StoreRegisterTest - 2015.11.11 at 21h 11m 32s.xml">
       <configuration name="StoreRegisterTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StoreRegisterTest_testFileWithSpecialCharacters - 2015.11.11 at 20h 44m 02s.xml">
-      <configuration name="StoreRegisterTest.testFileWithSpecialCharacters" configurationId="JUnit" />
+    <history-entry file="StoreRegisterTest - 2015.11.11 at 21h 42m 46s.xml">
+      <configuration name="StoreRegisterTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StoreRegisterTest_testFileWithSpecialCharacters - 2015.11.11 at 20h 44m 36s.xml">
-      <configuration name="StoreRegisterTest.testFileWithSpecialCharacters" configurationId="JUnit" />
+    <history-entry file="StoreRegisterTest - 2015.11.11 at 21h 43m 14s.xml">
+      <configuration name="StoreRegisterTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StoreRegisterTest_testFileWithSpecialCharacters - 2015.11.11 at 20h 46m 17s.xml">
-      <configuration name="StoreRegisterTest.testFileWithSpecialCharacters" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StoreRegisterTest_testFileWithSpecialCharacters - 2015.11.11 at 20h 48m 03s.xml">
-      <configuration name="StoreRegisterTest.testFileWithSpecialCharacters" configurationId="JUnit" />
+    <history-entry file="StoreRegisterTest - 2015.11.11 at 21h 43m 24s.xml">
+      <configuration name="StoreRegisterTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="StoreRegisterTest_testFileWithSpecialCharacters - 2015.11.11 at 20h 50m 52s.xml">
       <configuration name="StoreRegisterTest.testFileWithSpecialCharacters" configurationId="JUnit" />
@@ -905,10 +904,16 @@
     <history-entry file="StoreRegisterTest_testFileWithSpecialCharacters - 2015.11.11 at 20h 52m 21s.xml">
       <configuration name="StoreRegisterTest.testFileWithSpecialCharacters" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="StoreRegisterTest_testFileWithSpecialCharacters - 2015.11.11 at 21h 35m 33s.xml">
+      <configuration name="StoreRegisterTest.testFileWithSpecialCharacters" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StoreRegisterTest_testFileWithSpecialCharacters - 2015.11.11 at 21h 41m 00s.xml">
+      <configuration name="StoreRegisterTest.testFileWithSpecialCharacters" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="464" y="23" width="1400" height="977" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -921,6 +926,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -931,7 +937,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -953,13 +958,13 @@
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/java-test/src/com/routeone/interview/StoreRegisterTest.java</url>
-          <line>221</line>
+          <url>file://$PROJECT_DIR$/src/com/routeone/interview/CSVFile.java</url>
+          <line>62</line>
           <properties />
-          <option name="timeStamp" value="11" />
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="12" />
+      <option name="time" value="15" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -992,6 +997,7 @@
           <caret line="15" column="53" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2302#2318#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1038,6 +1044,7 @@
           <caret line="26" column="65" selection-start-line="26" selection-start-column="65" selection-end-line="26" selection-end-column="65" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2302#2318#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1084,16 +1091,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/routeone/interview/CSVFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/routeone/interview/Receipt.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1113,17 +1110,28 @@
     <entry file="file://$PROJECT_DIR$/src/com/routeone/interview/StoreRegister.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="69" column="19" selection-start-line="69" selection-start-column="19" selection-end-line="69" selection-end-column="19" />
+          <caret line="41" column="63" selection-start-line="41" selection-start-column="60" selection-end-line="41" selection-end-column="63" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/routeone/interview/CSVFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="45" column="50" selection-start-line="45" selection-start-column="50" selection-end-line="45" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2302#2318#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/java-test/src/com/routeone/interview/StoreRegisterTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.05234657">
-          <caret line="196" column="76" selection-start-line="196" selection-start-column="46" selection-end-line="196" selection-end-column="76" />
+        <state vertical-scroll-proportion="0.7382671">
+          <caret line="177" column="38" selection-start-line="177" selection-start-column="38" selection-end-line="177" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
