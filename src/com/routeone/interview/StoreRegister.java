@@ -9,6 +9,7 @@ public class StoreRegister {
     protected final static String INVENTORY_ITEM_NOT_FOUND_BEGIN = "Cannot find item '";
     protected final static String INVENTORY_ITEM_NOT_FOUND_END = "' in inventory file.";
     protected final static String INVALID_DOLLAR_AMOUNT_BEGIN = "Invalid dollar amount: ";
+    protected static final String INVENTORY_FILE_IS_NOT_LOADED = "Inventory file is not loaded";
     private CSVFile csvFile = null;
 
     public void loadInventory(File inventoryFile) {
@@ -25,7 +26,7 @@ public class StoreRegister {
 
     private String sumOrderFormatted(List<String> items) {
         if (csvFile == null) {
-            throw new RuntimeException("Inventory file is not loaded");
+            throw new RuntimeException(INVENTORY_FILE_IS_NOT_LOADED);
         }
         if (items == null) {
             return "$0.00";
@@ -44,7 +45,11 @@ public class StoreRegister {
                 }
 
                 myValueToFormat = myValueColumn.get("value");
-                myTotal += myFormat.parse(myValueToFormat).doubleValue();
+                try {
+                    myTotal += myFormat.parse(myValueToFormat).doubleValue();
+                } catch (ParseException e) {
+                    myTotal += myFormat.parse("$"+myValueToFormat.replaceAll("^\\s+","") ).doubleValue();
+                }
             }
         } catch (ParseException e) {
             throw new RuntimeException(INVALID_DOLLAR_AMOUNT_BEGIN + myValueToFormat);
