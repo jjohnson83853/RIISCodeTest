@@ -2,8 +2,11 @@ package com.routeone.interview;
 
 import org.junit.Assert;
 import org.junit.Test;
-import java.util.*;
+
 import java.io.File;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 /**
  * Created by bullprog3 on 11/3/15.
@@ -36,7 +39,32 @@ public class StoreRegisterTest {
         Assert.assertArrayEquals(myExpectedArray.toArray() ,myReceipt.getOrderedItems().toArray());
         Assert.assertEquals("$738.98", myReceipt.getFormattedTotal());
     }
+    @Test
+    public void testOrderWithIdenticalPrice() throws Exception {
+        //Should sort by price then alphabetically
+        final StoreRegister myStoreRegister = new StoreRegister();
+        myStoreRegister.loadInventory(new File("java-test/resource/happy-path.csv"));
 
+        final List<String> myTestItems = new ArrayList<String>() {
+            {
+                add("PC1033");
+                add("GenericMotherboard");
+                add("Mouse");
+                add("LCD");
+            }
+        };
+        final Receipt myReceipt = myStoreRegister.checkoutOrder(myTestItems);
+
+        final List<String> myExpectedArray = new ArrayList<String>() {{
+            add("GenericMotherboard");
+            add("LCD");
+            add("Mouse");
+            add("PC1033");
+        }};
+
+        Assert.assertArrayEquals(myExpectedArray.toArray() ,myReceipt.getOrderedItems().toArray());
+        Assert.fail();
+    }
     @Test
     public void testNullItemList(){
 

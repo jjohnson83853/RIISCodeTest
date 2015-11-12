@@ -1,9 +1,11 @@
 package com.routeone.interview;
 
-import java.util.*;
 import java.io.File;
-import java.text.*;
-import java.util.regex.*;
+import java.text.NumberFormat;
+import java.text.ParseException;
+import java.util.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class StoreRegister {
 
