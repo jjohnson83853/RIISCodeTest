@@ -3,6 +3,7 @@ package com.routeone.interview;
 import java.util.*;
 import java.io.File;
 import java.text.*;
+import java.util.regex.*;
 
 public class StoreRegister {
 
@@ -10,11 +11,14 @@ public class StoreRegister {
     protected final static String INVENTORY_ITEM_NOT_FOUND_END = "' in inventory file.";
     protected final static String INVALID_DOLLAR_AMOUNT_BEGIN = "Invalid dollar amount: ";
     protected static final String INVENTORY_FILE_IS_NOT_LOADED = "Inventory file is not loaded";
+    protected static final String INVENTORY_FILE_MUST_BE_SPECIFIED = "Inventory file must be specified";
+
+    public static final String INVALID_MONEY_COLUMN = "Invalid money column: ";
     private CSVFile csvFile = null;
 
     public void loadInventory(File inventoryFile) {
         if (inventoryFile == null) {
-            throw new RuntimeException("Inventory file must be specified");
+            throw new RuntimeException(INVENTORY_FILE_MUST_BE_SPECIFIED);
         }
         final List<String> inventoryFileColumns = new ArrayList<String>() {{
             add("name");
@@ -23,6 +27,7 @@ public class StoreRegister {
         }};
         this.csvFile = new CSVFile("name", inventoryFileColumns, inventoryFile);
     }
+
 
     private String sumOrderFormatted(List<String> items) {
         if (csvFile == null) {
@@ -36,7 +41,6 @@ public class StoreRegister {
 
         String myValueToFormat = null;
         try {
-
             for (String myOrderItems : items) {
                 myValueToFormat = null;
                 Map<String, String> myValueColumn = csvFile.get(myOrderItems);
@@ -45,13 +49,15 @@ public class StoreRegister {
                 }
 
                 myValueToFormat = myValueColumn.get("value");
-                try {
-                    myTotal += myFormat.parse(myValueToFormat).doubleValue();
-                } catch (ParseException e) {
-                    myTotal += myFormat.parse("$"+myValueToFormat.replaceAll("^\\s+","") ).doubleValue();
+                Pattern myPattern = Pattern.compile("^\\$(([1-9]\\d{0,2}(,\\d{3})*)|(([1-9]\\d*)?\\d))(\\.\\d\\d)?$");
+                //Pattern myPattern = Pattern.compile("19.99");
+                Matcher myMatcher = myPattern.matcher(myValueToFormat);
+                if (!myMatcher.matches()) {
+                    throw new RuntimeException(INVALID_MONEY_COLUMN + myValueToFormat);
                 }
+                myTotal += myFormat.parse(myValueToFormat).doubleValue();
             }
-        } catch (ParseException e) {
+        } catch(ParseException pe) {
             throw new RuntimeException(INVALID_DOLLAR_AMOUNT_BEGIN + myValueToFormat);
         }
         return myFormat.format(myTotal);

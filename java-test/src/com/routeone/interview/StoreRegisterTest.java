@@ -87,25 +87,13 @@ public class StoreRegisterTest {
 
     @Test
     public void testNullFile(){
-
-
         final StoreRegister myStoreRegister = new StoreRegister();
-        myStoreRegister.loadInventory(new File("java-test/resource/happy-path.csv"));
-
-        final List<String> myTestItems = new ArrayList<String>() {
-            {
-                add("PC1033");
-            }
-        };
-        final Receipt myReceipt = myStoreRegister.checkoutOrder(myTestItems);
-
-        final List<String> myExpectedArray = new ArrayList<String>() {{
-
-            add("PC1033");
-        }};
-
-        Assert.assertArrayEquals(myExpectedArray.toArray() ,myReceipt.getOrderedItems().toArray());
-        Assert.assertEquals("$19.99", myReceipt.getFormattedTotal());
+        try {
+            myStoreRegister.loadInventory(null);
+            Assert.fail();
+        } catch(RuntimeException re) {
+            Assert.assertEquals(StoreRegister.INVENTORY_FILE_MUST_BE_SPECIFIED, re.getMessage());
+        }
     }
 
     @Test
@@ -150,6 +138,28 @@ public class StoreRegisterTest {
             Assert.fail();
         }
     }
+
+    @Test
+    public void testInvalidMoney(){
+        try {
+            final StoreRegister myStoreRegister = new StoreRegister();
+            myStoreRegister.loadInventory(new File("java-test/resource/invalid-money.csv"));
+
+            final List<String> myTestItems = new ArrayList<String>() {
+                {
+                    add("PC1033");
+                }
+            };
+            final Receipt myReceipt = myStoreRegister.checkoutOrder(myTestItems);
+
+            Assert.fail();
+        } catch(RuntimeException re) {
+            Assert.assertEquals(StoreRegister.INVALID_DOLLAR_AMOUNT_BEGIN+"19x99", re.getMessage());
+        } catch(Exception e){
+            Assert.fail();
+        }
+    }
+
 
     @Test
     public void testFormattedTotalWithCommas(){

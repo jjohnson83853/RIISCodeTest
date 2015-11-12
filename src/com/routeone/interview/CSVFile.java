@@ -27,29 +27,28 @@ public class CSVFile extends HashMap<String,Map<String,String>> {
         if (stringToSplit == null)
             return Collections.emptyList();
 
-        final List<String> list = new ArrayList<String>();
+        final List<String> myCommaSeperatedValues = new ArrayList<String>();
         final Matcher mySplitPatternMatcher = splitSearchPattern.matcher(stringToSplit);
         int pos = 0;
-        boolean quoteMode = false;
-        //(?:\s*(?:\"([^\"]*)\"|([^,]+))\s*,?)+?
+        boolean myInQuoteMode = false;
         while (mySplitPatternMatcher.find())
         {
-            final String sep = mySplitPatternMatcher.group();
-            if ("\"".equals(sep))
+            final String mySeperator = mySplitPatternMatcher.group();
+            if ("\"".equals(mySeperator))
             {
-                quoteMode = !quoteMode;
+                myInQuoteMode = !myInQuoteMode;
             }
-            else if (!quoteMode && ",".equals(sep))
+            else if (!myInQuoteMode && ",".equals(mySeperator))
             {
                 final int toPos = mySplitPatternMatcher.start();
-                list.add(stringToSplit.substring(pos, toPos).replace("\",\"",","));
+                myCommaSeperatedValues.add(stringToSplit.substring(pos, toPos).replace("\",\"",","));
                 pos = mySplitPatternMatcher.end();
             }
         }
         if (pos < stringToSplit.length()) {
-            list.add(stringToSplit.substring(pos).replace("\",\"",","));
+            myCommaSeperatedValues.add(stringToSplit.substring(pos).replace("\",\"",","));
         }
-        return list;
+        return myCommaSeperatedValues;
     }
 
     private void parseFile() {

@@ -3,8 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="21fb6bb6-97ba-44a7-8fc5-61992dc86a26" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java-test/resource/largvalue.csv" afterPath="$PROJECT_DIR$/java-test/resource/largvalue.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java-test/src/com/routeone/interview/StoreRegisterTest.java" afterPath="$PROJECT_DIR$/java-test/src/com/routeone/interview/StoreRegisterTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/routeone/interview/CSVFile.java" afterPath="$PROJECT_DIR$/src/com/routeone/interview/CSVFile.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/routeone/interview/StoreRegister.java" afterPath="$PROJECT_DIR$/src/com/routeone/interview/StoreRegister.java" />
     </list>
     <ignored path="CodeTest.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -17,6 +20,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/CodeTest$StoreRegisterTest_testOneRecordFile.coverage" NAME="StoreRegisterTest.testOneRecordFile Coverage Results" MODIFIED="1447302151500" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.routeone.interview.*</FILTER>
+    </SUITE>
+  </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -26,21 +34,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StoreRegister.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="StoreRegister.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/routeone/interview/StoreRegister.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="41" column="63" selection-start-line="41" selection-start-column="60" selection-end-line="41" selection-end-column="63" />
+            <state vertical-scroll-proportion="0.4354561">
+              <caret line="52" column="18" selection-start-line="52" selection-start-column="18" selection-end-line="52" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -51,21 +49,21 @@
       <file leaf-file-name="CSVFile.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/routeone/interview/CSVFile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="45" column="50" selection-start-line="45" selection-start-column="50" selection-end-line="45" selection-end-column="50" />
+            <state vertical-scroll-proportion="-6.814815">
+              <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2302#2318#0" expanded="true" />
+                <element signature="e#2365#2381#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StoreRegisterTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="StoreRegisterTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/java-test/src/com/routeone/interview/StoreRegisterTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7382671">
-              <caret line="177" column="38" selection-start-line="177" selection-start-column="38" selection-end-line="177" selection-end-column="38" />
+            <state vertical-scroll-proportion="-6.814815">
+              <caret line="109" column="0" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -122,15 +120,15 @@
         <option value="$PROJECT_DIR$/java-test/src/com/company/com/routeone/interview/StoreRegisterTest.java" />
         <option value="$PROJECT_DIR$/java-test/src/com/routeone/interview/StoreRegister.java" />
         <option value="$PROJECT_DIR$/src/com/company/com/routeone/interview/StoreRegister.java" />
-        <option value="$PROJECT_DIR$/src/com/routeone/interview/StoreRegister.java" />
         <option value="$PROJECT_DIR$/src/com/routeone/interview/CSVFile.java" />
         <option value="$PROJECT_DIR$/java-test/src/com/routeone/interview/StoreRegisterTest.java" />
+        <option value="$PROJECT_DIR$/src/com/routeone/interview/StoreRegister.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="464" />
-    <option name="y" value="23" />
+    <option name="x" value="527" />
+    <option name="y" value="27" />
     <option name="width" value="1400" />
     <option name="height" value="977" />
   </component>
@@ -215,10 +213,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="company" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -309,28 +303,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="company" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CodeTest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CodeTest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="company" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com.routeone.interview" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -496,7 +468,7 @@
       <recent name="$PROJECT_DIR$/java-test/resource" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.StoreRegisterTest">
+  <component name="RunManager" selected="JUnit.StoreRegisterTest.testOneRecordFile">
     <configuration default="false" name="StoreRegisterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -549,7 +521,7 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="StoreRegisterTest.testInvalidFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="StoreRegisterTest.testNullFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.routeone.interview.*" />
@@ -561,7 +533,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.routeone.interview" />
       <option name="MAIN_CLASS_NAME" value="com.routeone.interview.StoreRegisterTest" />
-      <option name="METHOD_NAME" value="testInvalidFile" />
+      <option name="METHOD_NAME" value="testNullFile" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
@@ -575,7 +547,7 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="StoreRegisterTest.testFormattedTotalWithCommas" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="StoreRegisterTest.testInvalidMoney" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.routeone.interview.*" />
@@ -587,7 +559,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.routeone.interview" />
       <option name="MAIN_CLASS_NAME" value="com.routeone.interview.StoreRegisterTest" />
-      <option name="METHOD_NAME" value="testFormattedTotalWithCommas" />
+      <option name="METHOD_NAME" value="testInvalidMoney" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
@@ -601,7 +573,7 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="StoreRegisterTest.testFileWithSpecialCharacters" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="com.routeone.interview in CodeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.routeone.interview.*" />
@@ -612,9 +584,9 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.routeone.interview" />
-      <option name="MAIN_CLASS_NAME" value="com.routeone.interview.StoreRegisterTest" />
-      <option name="METHOD_NAME" value="testFileWithSpecialCharacters" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="package" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" />
@@ -852,17 +824,17 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.StoreRegisterTest" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.StoreRegisterTest.testOneRecordFile" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.StoreRegisterTest.testInvalidFile" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.StoreRegisterTest.testFormattedTotalWithCommas" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.StoreRegisterTest.testFileWithSpecialCharacters" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.StoreRegisterTest.testNullFile" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.StoreRegisterTest.testInvalidMoney" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.com.routeone.interview in CodeTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.StoreRegisterTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.StoreRegisterTest.testFileWithSpecialCharacters" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.StoreRegisterTest.testFormattedTotalWithCommas" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.StoreRegisterTest.testOneRecordFile" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.StoreRegisterTest.testInvalidFile" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.StoreRegisterTest.testOneRecordFile" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.StoreRegisterTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.StoreRegisterTest.testInvalidMoney" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.com.routeone.interview in CodeTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.StoreRegisterTest.testNullFile" />
       </list>
     </recent_temporary>
   </component>
@@ -880,39 +852,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="StoreRegisterTest - 2015.11.11 at 20h 51m 48s.xml">
+    <history-entry file="StoreRegisterTest - 2015.11.11 at 23h 20m 48s.xml">
       <configuration name="StoreRegisterTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StoreRegisterTest - 2015.11.11 at 21h 10m 54s.xml">
+    <history-entry file="StoreRegisterTest - 2015.11.11 at 23h 22m 08s.xml">
       <configuration name="StoreRegisterTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StoreRegisterTest - 2015.11.11 at 21h 11m 32s.xml">
+    <history-entry file="StoreRegisterTest - 2015.11.11 at 23h 25m 59s.xml">
       <configuration name="StoreRegisterTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StoreRegisterTest - 2015.11.11 at 21h 42m 46s.xml">
-      <configuration name="StoreRegisterTest" configurationId="JUnit" />
+    <history-entry file="StoreRegisterTest_testInvalidMoney - 2015.11.11 at 23h 15m 59s.xml">
+      <configuration name="StoreRegisterTest.testInvalidMoney" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StoreRegisterTest - 2015.11.11 at 21h 43m 14s.xml">
-      <configuration name="StoreRegisterTest" configurationId="JUnit" />
+    <history-entry file="StoreRegisterTest_testInvalidMoney - 2015.11.11 at 23h 19m 40s.xml">
+      <configuration name="StoreRegisterTest.testInvalidMoney" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StoreRegisterTest - 2015.11.11 at 21h 43m 24s.xml">
-      <configuration name="StoreRegisterTest" configurationId="JUnit" />
+    <history-entry file="StoreRegisterTest_testOneRecordFile - 2015.11.11 at 23h 21m 36s.xml">
+      <configuration name="StoreRegisterTest.testOneRecordFile" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StoreRegisterTest_testFileWithSpecialCharacters - 2015.11.11 at 20h 50m 52s.xml">
-      <configuration name="StoreRegisterTest.testFileWithSpecialCharacters" configurationId="JUnit" />
+    <history-entry file="StoreRegisterTest_testOneRecordFile - 2015.11.11 at 23h 22m 32s.xml">
+      <configuration name="StoreRegisterTest.testOneRecordFile" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StoreRegisterTest_testFileWithSpecialCharacters - 2015.11.11 at 20h 52m 21s.xml">
-      <configuration name="StoreRegisterTest.testFileWithSpecialCharacters" configurationId="JUnit" />
+    <history-entry file="StoreRegisterTest_testOneRecordFile - 2015.11.11 at 23h 22m 49s.xml">
+      <configuration name="StoreRegisterTest.testOneRecordFile" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StoreRegisterTest_testFileWithSpecialCharacters - 2015.11.11 at 21h 35m 33s.xml">
-      <configuration name="StoreRegisterTest.testFileWithSpecialCharacters" configurationId="JUnit" />
+    <history-entry file="StoreRegisterTest_testOneRecordFile - 2015.11.11 at 23h 25m 20s.xml">
+      <configuration name="StoreRegisterTest.testOneRecordFile" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StoreRegisterTest_testFileWithSpecialCharacters - 2015.11.11 at 21h 41m 00s.xml">
-      <configuration name="StoreRegisterTest.testFileWithSpecialCharacters" configurationId="JUnit" />
+    <history-entry file="StoreRegisterTest_testOneRecordFile - 2015.11.11 at 23h 26m 39s.xml">
+      <configuration name="StoreRegisterTest.testOneRecordFile" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="464" y="23" width="1400" height="977" extended-state="0" />
+    <frame x="527" y="27" width="1400" height="977" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -923,6 +895,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.07571428" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -939,6 +912,14 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
@@ -947,24 +928,18 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/routeone/interview/StoreRegister.java</url>
-          <line>47</line>
-          <properties />
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/routeone/interview/StoreRegister.java</url>
-          <line>29</line>
+          <line>34</line>
           <properties />
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/routeone/interview/CSVFile.java</url>
-          <line>62</line>
+          <url>file://$PROJECT_DIR$/src/com/routeone/interview/StoreRegister.java</url>
+          <line>50</line>
           <properties />
-          <option name="timeStamp" value="13" />
+          <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="15" />
+      <option name="time" value="24" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -973,14 +948,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/routeone/interview/StoreRegister.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -997,7 +964,7 @@
           <caret line="15" column="53" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2302#2318#0" expanded="true" />
+            <element signature="e#2365#2381#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1020,14 +987,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/routeone/interview/StoreRegister.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1044,7 +1003,7 @@
           <caret line="26" column="65" selection-start-line="26" selection-start-column="65" selection-end-line="26" selection-end-column="65" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2302#2318#0" expanded="true" />
+            <element signature="e#2365#2381#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1083,10 +1042,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
+    <entry file="jar://$PROJECT_DIR$/lib/junit-4.12.jar!/org/junit/Assert.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state vertical-scroll-proportion="-7.148148">
+          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1099,39 +1058,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/junit-4.12.jar!/org/junit/Assert.class">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/src.zip!/java/util/regex/Matcher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.148148">
-          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/routeone/interview/StoreRegister.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="41" column="63" selection-start-line="41" selection-start-column="60" selection-end-line="41" selection-end-column="63" />
+        <state vertical-scroll-proportion="0.3321859">
+          <caret line="557" column="19" selection-start-line="557" selection-start-column="19" selection-end-line="557" selection-end-column="19" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#20033#20034#0" expanded="true" />
+            <element signature="e#20078#20079#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/routeone/interview/CSVFile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="45" column="50" selection-start-line="45" selection-start-column="50" selection-end-line="45" selection-end-column="50" />
+        <state vertical-scroll-proportion="-6.814815">
+          <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2302#2318#0" expanded="true" />
+            <element signature="e#2365#2381#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/java-test/src/com/routeone/interview/StoreRegisterTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7382671">
-          <caret line="177" column="38" selection-start-line="177" selection-start-column="38" selection-end-line="177" selection-end-column="38" />
+        <state vertical-scroll-proportion="-6.814815">
+          <caret line="109" column="0" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/routeone/interview/StoreRegister.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4354561">
+          <caret line="52" column="18" selection-start-line="52" selection-start-column="18" selection-end-line="52" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
