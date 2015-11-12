@@ -1,4 +1,4 @@
-package com.company.com.routeone.interview;
+package com.routeone.interview;
 import java.util.List;
 /**
  * Created by bullprog3 on 11/3/15.

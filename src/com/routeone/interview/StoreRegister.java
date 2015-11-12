@@ -1,4 +1,4 @@
-package com.company.com.routeone.interview;
+package com.routeone.interview;
 
 import java.util.*;
 import java.io.File;
@@ -8,6 +8,7 @@ public class StoreRegister {
 
     protected final static String INVENTORY_ITEM_NOT_FOUND_BEGIN = "Cannot find item '";
     protected final static String INVENTORY_ITEM_NOT_FOUND_END = "' in inventory file.";
+    protected final static String INVALID_DOLLAR_AMOUNT_BEGIN = "Invalid dollar amount: ";
     private CSVFile csvFile = null;
 
     public void loadInventory(File inventoryFile) {
@@ -31,19 +32,22 @@ public class StoreRegister {
         }
         double myTotal = 0.0;
         final NumberFormat myFormat = NumberFormat.getCurrencyInstance(Locale.US);
+
+        String myValueToFormat = null;
         try {
 
             for (String myOrderItems : items) {
+                myValueToFormat = null;
                 Map<String, String> myValueColumn = csvFile.get(myOrderItems);
                 if (myValueColumn == null) {
                     throw new RuntimeException(INVENTORY_ITEM_NOT_FOUND_BEGIN + myOrderItems + INVENTORY_ITEM_NOT_FOUND_END);
                 }
 
-                myTotal += myFormat.parse(myValueColumn.get("value")).doubleValue();
-
+                myValueToFormat = myValueColumn.get("value");
+                myTotal += myFormat.parse(myValueToFormat).doubleValue();
             }
         } catch (ParseException e) {
-            throw new RuntimeException("Invalid dollar amount.");
+            throw new RuntimeException(INVALID_DOLLAR_AMOUNT_BEGIN + myValueToFormat);
         }
         return myFormat.format(myTotal);
     }

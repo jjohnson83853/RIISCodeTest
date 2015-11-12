@@ -1,4 +1,4 @@
-package com.company.com.routeone.interview;
+package com.routeone.interview;
 import java.util.*;
 import java.io.*;
 import java.util.regex.*;
