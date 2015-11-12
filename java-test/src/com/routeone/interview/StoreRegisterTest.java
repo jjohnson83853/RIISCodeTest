@@ -50,10 +50,6 @@ public class StoreRegisterTest {
         Assert.assertEquals("$0.00", myReceipt.getFormattedTotal());
     }
 
-    @Test
-    public void testInvalidDollarAmount(){
-        Assert.fail();
-    }
 
     @Test
     public void testEmptyItemList(){
@@ -179,7 +175,7 @@ public class StoreRegisterTest {
         }};
 
         Assert.assertArrayEquals(myExpectedArray.toArray() ,myReceipt.getOrderedItems().toArray());
-        Assert.assertEquals("$738.98", myReceipt.getFormattedTotal());
+        Assert.assertEquals("$721.99", myReceipt.getFormattedTotal());
 
     }
 
@@ -207,6 +203,24 @@ public class StoreRegisterTest {
 
     @Test
     public void testFileWithSpecialCharacters(){
-        Assert.fail();
+
+        final StoreRegister myStoreRegister = new StoreRegister();
+        myStoreRegister.loadInventory(new File("java-test/resource/specialcharacter.csv"));
+
+        final List<String> myExpectItems = new ArrayList<String>() {
+            {
+                add("R,2,D,2");
+                add("a");
+                add("b");
+                add("x");
+                add("y");
+                add("z");
+
+            }
+        };
+
+        final List<String> myOrderedItems = myStoreRegister.checkoutOrder(myExpectItems).getOrderedItems();
+        Collections.sort(myOrderedItems);
+        Assert.assertArrayEquals(myExpectItems.toArray(),myOrderedItems.toArray());
     }
 }
