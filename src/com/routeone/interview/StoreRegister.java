@@ -53,7 +53,7 @@ public class StoreRegister {
 
                 //Handle if there is no dollar sign in the inventory file.
                 myOriginalValueFromInventory = myValueColumn.get("value");
-                myValueToFormat = "$"+myOriginalValueFromInventory.replace("$","");
+                myValueToFormat = "$" + myOriginalValueFromInventory.replace("$", "");
 
                 Matcher myMatcher = pattern.matcher(myValueToFormat);
                 if (!myMatcher.matches()) {
@@ -61,21 +61,57 @@ public class StoreRegister {
                 }
                 myTotal += myFormat.parse(myValueToFormat).doubleValue();
             }
-        } catch(ParseException pe) {
+        } catch (ParseException pe) {
             throw new RuntimeException(INVALID_MONEY_COLUMN + myOriginalValueFromInventory);
         }
         return myFormat.format(myTotal);
     }
 
+    private List<Map<String,String>> makeUnindexed(Map<String,Map<String,String>> items) {
+        final List<Map<String,String>> myConvertedList = new ArrayList<Map<String,String>>(items.size());
+        for(Map.Entry<String,Map<String,String>> myEntry: items.entrySet()) {
+            myConvertedList.add( myEntry.getValue());
+        }
+        return myConvertedList;
+    }
+
+    private Map<String,Map<String,String>> findCSVRowsByItemName(List<String> items) {
+        final Map<String,Map<String,String>> myCSVFile = new HashMap<String,Map<String,String>>(items.size());
+        if(items !=null ){
+            for(String myEntry: items) {
+                myCSVFile.put(myEntry, this.csvFile.get(myEntry));
+            }
+        }
+        return myCSVFile;
+    }
+
     private List<String> orderItems(List<String> items) {
         if (items == null) {
-            return new ArrayList<String>();
+            return Collections.emptyList();
         }
-        final List<String> myOrderedItems = new ArrayList<String>();
+
+        final List<Map<String,String>> myConvertedList = makeUnindexed(findCSVRowsByItemName(items));
 
         //Order most expensive item to list, then alphabetically
-        myOrderedItems.addAll(items);
-        Collections.sort(myOrderedItems);
+        Collections.sort(myConvertedList, new Comparator<Map<String, String>>() {
+            public int compare(Map<String, String> row1, Map<String, String> row2) {
+                Double myValue1 = row1.get("value") != null ? Double.valueOf(row1.get("value")) : 0.00;
+                Double myValue2 = row2.get("value") != null ? Double.valueOf(row2.get("value")) : 0.00;
+                int myValueCompareResult = myValue1.compareTo(myValue2);
+                if (myValueCompareResult != 0) {
+                    return myValueCompareResult*-1;
+                } else {
+                    return row1.get("name") != null ? row1.get("name").compareTo(row2.get("name")) : -1;
+                }
+            }
+        });
+
+        //get keys back in order
+        final List<String> myOrderedItems = new ArrayList<String>();
+        for(Map<String,String> myRecord: myConvertedList) {
+            myOrderedItems.add(myRecord.get("name"));
+        }
+
         return myOrderedItems;
     }
 

@@ -47,23 +47,22 @@ public class StoreRegisterTest {
 
         final List<String> myTestItems = new ArrayList<String>() {
             {
-                add("PC1033");
+                add("GenericProcessor");
                 add("GenericMotherboard");
-                add("Mouse");
+                add("GenericMotherboardV2");
                 add("LCD");
             }
         };
         final Receipt myReceipt = myStoreRegister.checkoutOrder(myTestItems);
 
         final List<String> myExpectedArray = new ArrayList<String>() {{
+            add("GenericProcessor");
             add("GenericMotherboard");
+            add("GenericMotherboardV2");
             add("LCD");
-            add("Mouse");
-            add("PC1033");
         }};
 
         Assert.assertArrayEquals(myExpectedArray.toArray() ,myReceipt.getOrderedItems().toArray());
-        Assert.fail();
     }
     @Test
     public void testNullItemList(){
@@ -206,10 +205,12 @@ public class StoreRegisterTest {
         final Receipt myReceipt = myStoreRegister.checkoutOrder(myTestItems);
 
         final List<String> myExpectedArray = new ArrayList<String>() {{
+
+            add("PC1033");
             add("GenericMotherboard");
             add("LCD");
             add("Mouse");
-            add("PC1033");
+
         }};
 
         Assert.assertArrayEquals(myExpectedArray.toArray() ,myReceipt.getOrderedItems().toArray());
