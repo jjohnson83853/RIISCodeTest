@@ -182,7 +182,7 @@ public class StoreRegisterTest {
 
             Assert.fail();
         } catch(RuntimeException re) {
-            Assert.assertEquals(StoreRegister.INVALID_DOLLAR_AMOUNT_BEGIN+"19x99", re.getMessage());
+            Assert.assertEquals(StoreRegister.INVALID_MONEY_COLUMN+"19X99", re.getMessage());
         } catch(Exception e){
             Assert.fail();
         }
