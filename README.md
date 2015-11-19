@@ -4,21 +4,20 @@ To run the test task (after you have installed gradle):
 
 gradle test
 
-I am not sure if my test a thorough enough. I could write a ton more tests but it seems like on unreasonable amount of time to do that for a coding test. Normally I would use a code coverage tool to find branches that need testing.
 
 Building
 --------
-To build:
+To build (and test at the same time):
 
 gradle build
 
-This creates: ./build/libs/CodeTest.jar
+This creates: ./build/libs/RIISCodeTest.jar
 
 This does not have a main. It is driven by unit tests.
 
 Assumptions
 -----------
-# Dollar amounts are not stored in currency format in the inventory file.
-# If there are more or less then three columns the inventory files is invalid.
-# A dollar amount of 1.2 is invalid (and not considered 1.20
+ - If there are more or less then three columns the inventory files is invalid.
+ - A dollar amount of 1.2 is invalid (and not considered 1.20)
+ - The test coverage is not as high as it could be. I assumed that's not necesary because to get all the branch coverage would take a long time.
 
