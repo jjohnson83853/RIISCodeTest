@@ -51,7 +51,6 @@ public class StoreRegister {
                     throw new RuntimeException(INVENTORY_ITEM_NOT_FOUND_BEGIN + myOrderItems + INVENTORY_ITEM_NOT_FOUND_END);
                 }
 
-                //Handle if there is no dollar sign in the inventory file.
                 myOriginalValueFromInventory = myValueColumn.get("value");
                 myValueToFormat = "$" + myOriginalValueFromInventory.replace("$", "");
 
